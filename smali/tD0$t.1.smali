@@ -1,0 +1,95 @@
+.class public final LtD0$t;
+.super LtD0;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = LtD0;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = "t"
+.end annotation
+
+.annotation runtime Lkotlin/Metadata;
+    bv = {}
+    d1 = {
+        "\u0000\u001c\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u0002\n\u0002\u0008\u0002\u0008\u00c6\u0001\u0018\u00002\u00020\u0001J\u001a\u0010\u0007\u001a\u00020\u00062\u0006\u0010\u0003\u001a\u00020\u00022\u0008\u0010\u0005\u001a\u0004\u0018\u00010\u0004H\u0016\u00a8\u0006\u0008"
+    }
+    d2 = {
+        "LtD0$t;",
+        "LtD0;",
+        "Lru2;",
+        "navigator",
+        "",
+        "vararg",
+        "",
+        "c",
+        "app_birdRelease"
+    }
+    k = 0x1
+    mv = {
+        0x1,
+        0x6,
+        0x0
+    }
+.end annotation
+
+
+# direct methods
+.method public constructor <init>(Ljava/lang/String;I)V
+    .locals 2
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()V"
+        }
+    .end annotation
+
+    const-class v0, Lco/bird/android/app/feature/charger/activity/ReportMultipleBirdsFraudActivity;
+
+    const/4 v1, 0x0
+
+    invoke-direct {p0, p1, p2, v0, v1}, LtD0;-><init>(Ljava/lang/String;ILjava/lang/Class;Lkotlin/jvm/internal/DefaultConstructorMarker;)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public c(Lru2;Ljava/lang/Object;)V
+    .locals 6
+
+    const-string p2, "navigator"
+
+    invoke-static {p1, p2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    sget-object v1, Lco/bird/android/model/constant/MapMode;->RIDER:Lco/bird/android/model/constant/MapMode;
+
+    new-instance p2, Lcom/google/android/gms/maps/model/LatLng;
+
+    const-wide v2, 0x4040fe113404ea4bL    # 33.9849
+
+    const-wide v4, -0x3fa2621cac083127L    # -118.467
+
+    invoke-direct {p2, v2, v3, v4, v5}, Lcom/google/android/gms/maps/model/LatLng;-><init>(DD)V
+
+    const/high16 v0, 0x41800000    # 16.0f
+
+    invoke-static {p2, v0}, Lcom/google/android/gms/maps/model/CameraPosition;->J(Lcom/google/android/gms/maps/model/LatLng;F)Lcom/google/android/gms/maps/model/CameraPosition;
+
+    move-result-object v2
+
+    const/4 v3, 0x0
+
+    const/4 v4, 0x4
+
+    const/4 v5, 0x0
+
+    move-object v0, p1
+
+    invoke-static/range {v0 .. v5}, Lru2$a;->goToReportMultipleBirdsFraud$default(Lru2;Lco/bird/android/model/constant/MapMode;Lcom/google/android/gms/maps/model/CameraPosition;Ljava/lang/Integer;ILjava/lang/Object;)V
+
+    return-void
+.end method

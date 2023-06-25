@@ -1,0 +1,23 @@
+.class public final LzD3;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# static fields
+.field public static final item_group:I = 0x7f0c0284
+
+.field public static final item_inventory_scan:I = 0x7f0c02a3
+
+.field public static final item_last_successful_scan:I = 0x7f0c02af
+
+.field public static final item_model_header:I = 0x7f0c02bb
+
+
+# direct methods
+.method private constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
